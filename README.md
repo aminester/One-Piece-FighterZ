@@ -17,6 +17,8 @@ This is a 2-D fighting game based on Eiichiro Oda's acclaimed anime and manga se
 
 - One Piece inspired soundtrack ("We Are" by Hiroshi Kitadani)
 
+- Sound effects for attacks
+
 - Marineford stage
 
 # Character Move Sets:
