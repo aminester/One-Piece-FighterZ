@@ -27,6 +27,15 @@ This is a 2-D fighting game based on Eiichiro Oda's acclaimed anime and manga se
   - Primary Attack (Gear 2 Jet Pistol): [spacebar]
   
   ![download-4](https://user-images.githubusercontent.com/122713100/217479773-23ca69f7-3326-4a66-b38b-b7b0aa4ca438.gif)
+  
+  - Secondary Attack (Stamp Gatling): [s]
+  
+  ![stamp](https://user-images.githubusercontent.com/122713100/217836550-e50f7cb7-774b-4c70-9193-6422ff16fd95.gif)
+  
+  - Third Attack (Elephant Gun): [z]
+  
+  ![elgun](https://user-images.githubusercontent.com/122713100/217836651-d572db39-c789-42a0-90c6-62d2ec6357de.gif)
+
 
 
 - Roronoa Zoro:
@@ -35,6 +44,15 @@ This is a 2-D fighting game based on Eiichiro Oda's acclaimed anime and manga se
   - Primary Attack (Tatsu Maki): [↓]
   
   ![download-3](https://user-images.githubusercontent.com/122713100/217479286-311e1fa2-aecc-4556-906e-7f275be424d3.gif)
+  
+  - Secondary Attack (Purgatory Onigiri): [Enter]
+  
+  ![ZAttack](https://user-images.githubusercontent.com/122713100/217836983-8b454e9f-0109-49f1-868c-a1d85936c8fe.gif)
+  
+  - Third Attack(Ul-tora Gari Ultra Tiger Hunt): [Shift]
+  
+  ![ZAttack3](https://user-images.githubusercontent.com/122713100/217837272-695ce11e-3a80-40b1-800d-72e216574cd4.gif)
+
 
 
 # How to play:
