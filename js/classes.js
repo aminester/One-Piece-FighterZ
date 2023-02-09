@@ -1,3 +1,5 @@
+// add all functionality for secondary attack 2
+// add all functionality for tertiary attack 3
 class Sprite {
   constructor({
     position,
@@ -125,9 +127,32 @@ class Fighter extends Sprite {
     } else this.velocity.y += gravity
   }
 
+
   attack() {
     this.switchSprite('attack1')
     this.isAttacking = true
+
+    // Play audio for attack1
+    let audio = new Audio("./img/luffy/JetPistol.mp3");
+    audio.play();
+  }
+  // add functionality for secondary attack
+  attack2() {
+    this.switchSprite('attack2')
+    this.isAttacking = true
+
+    // Play audio for attack1
+    let audio = new Audio("./img/luffy/StampGatling.mp3");
+    audio.play();
+  }
+// add functionality for third attack
+  attack3() {
+    this.switchSprite('attack3')
+    this.isAttacking = true
+
+    // Play audio for attack3
+    let audio = new Audio("./img/luffy/ElephantGun.mp3");
+    audio.play();
   }
 
   takeHit() {
@@ -149,6 +174,19 @@ class Fighter extends Sprite {
     if (
       this.image === this.sprites.attack1.image &&
       this.framesCurrent < this.sprites.attack1.framesMax - 1
+    )
+      return
+
+  // override all other animations with the attack2 animation
+    if (
+      this.image === this.sprites.attack2.image &&
+      this.framesCurrent < this.sprites.attack2.framesMax - 1
+    )
+      return
+    // override all other animations with the attack3 animation
+    if (
+      this.image === this.sprites.attack3.image &&
+      this.framesCurrent < this.sprites.attack3.framesMax - 1
     )
       return
 
@@ -194,6 +232,22 @@ class Fighter extends Sprite {
         if (this.image !== this.sprites.attack1.image) {
           this.image = this.sprites.attack1.image
           this.framesMax = this.sprites.attack1.framesMax
+          this.framesCurrent = 0
+        }
+        break
+
+      case 'attack2':
+        if (this.image !== this.sprites.attack2.image) {
+          this.image = this.sprites.attack2.image
+          this.framesMax = this.sprites.attack2.framesMax
+          this.framesCurrent = 0
+        }
+        break
+
+      case 'attack3':
+        if (this.image !== this.sprites.attack3.image) {
+          this.image = this.sprites.attack3.image
+          this.framesMax = this.sprites.attack3.framesMax
           this.framesCurrent = 0
         }
         break
