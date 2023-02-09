@@ -46,6 +46,7 @@ const player = new Fighter({
     x: 215,
     y: 157
   },
+  // add sprite for secondary attack
   sprites: {
     idle: {
       imageSrc: './img/luffy/Idle.png',
@@ -66,6 +67,14 @@ const player = new Fighter({
     attack1: {
       imageSrc: './img/luffy/Attack1.png',
       framesMax: 6
+    },
+    attack2: {
+      imageSrc: './img/luffy/Attack2.png',
+      framesMax: 6
+    },
+    attack3: {
+      imageSrc: './img/luffy/Attack3.png',
+      framesMax: 7.5
     },
     takeHit: {
       imageSrc: './img/luffy/Take Hit - white silhouette.png',
@@ -127,6 +136,14 @@ const enemy = new Fighter({
     attack1: {
       imageSrc: './img/zoro/Attack1.png',
       framesMax: 4
+    },
+    attack2: {
+      imageSrc: './img/zoro/Attack2.png',
+      framesMax: 8
+    },
+    attack3: {
+      imageSrc: './img/zoro/Attack3.png',
+      framesMax: 8
     },
     takeHit: {
       imageSrc: './img/zoro/Take hit.png',
@@ -270,6 +287,7 @@ function animate() {
 animate()
 
 window.addEventListener('keydown', (event) => {
+  // add case for secondary attack 2
   if (!player.dead) {
     switch (event.key) {
       case 'd':
@@ -286,9 +304,16 @@ window.addEventListener('keydown', (event) => {
       case ' ':
         player.attack()
         break
+      case 's':
+        player.attack2()
+        break
+      // functionality for a third (tertiary) attack
+      case 'z':
+        player.attack3()
+        break
     }
   }
-
+// add case for secondary attack 2
   if (!enemy.dead) {
     switch (event.key) {
       case 'ArrowRight':
@@ -304,7 +329,13 @@ window.addEventListener('keydown', (event) => {
         break
       case 'ArrowDown':
         enemy.attack()
-
+        break
+      case 'Enter':
+        enemy.attack2()
+        break
+      // functionality for a third (tertiary) attack
+      case 'Shift':
+        enemy.attack3()
         break
     }
   }
