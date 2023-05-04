@@ -1,5 +1,7 @@
 # One Piece 2-D Fighting Game
 
+Live demo on https://aminester.github.io/One-Piece-FighterZ/
+
 This is a 2-D fighting game based on Eiichiro Oda's acclaimed anime and manga series, One Piece. It is built using HTML and JavaScript, making it a fun and interactive experience for players. Players can choose between fighting as Straw Hat Luffy (P1) or Roronoa Zoro (P2).
 
 <img width="1274" alt="OnePieceFighterz_Home" src="https://user-images.githubusercontent.com/122713100/217472854-dd3af7c7-8c5b-45a8-8028-adf10b506afe.png">
