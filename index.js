@@ -13,7 +13,7 @@ const background = new Sprite({
     x: 0,
     y: 0
   },
-  imageSrc: './img/marineford.png'
+  imageSrc: './img/shibuya.png'
 })
 
 const shop = new Sprite({
@@ -39,7 +39,7 @@ const player = new Fighter({
     x: 0,
     y: 0
   },
-  imageSrc: './img/luffy/Idle.png',
+  imageSrc: './img/gojo/Idle.png',
   framesMax: 8,
   scale: 2.5,
   offset: {
@@ -49,39 +49,39 @@ const player = new Fighter({
   // add sprite for secondary attack
   sprites: {
     idle: {
-      imageSrc: './img/luffy/Idle.png',
+      imageSrc: './img/gojo/Idle.png',
       framesMax: 8
     },
     run: {
-      imageSrc: './img/luffy/Run.png',
-      framesMax: 8
+      imageSrc: './img/gojo/Run.png',
+      framesMax: 5
     },
     jump: {
-      imageSrc: './img/luffy/Jump.png',
+      imageSrc: './img/gojo/Jump.png',
       framesMax: 2
     },
     fall: {
-      imageSrc: './img/luffy/Fall.png',
+      imageSrc: './img/gojo/Fall.png',
       framesMax: 2
     },
     attack1: {
-      imageSrc: './img/luffy/Attack1.png',
+      imageSrc: './img/gojo/Attack1.png',
       framesMax: 6
     },
     attack2: {
-      imageSrc: './img/luffy/Attack2.png',
-      framesMax: 6
+      imageSrc: './img/gojo/Attack2.png',
+      framesMax: 4
     },
     attack3: {
-      imageSrc: './img/luffy/Attack3.png',
+      imageSrc: './img/gojo/Attack3.png',
       framesMax: 7.5
     },
     takeHit: {
-      imageSrc: './img/luffy/Take Hit - white silhouette.png',
+      imageSrc: './img/gojo/Take Hit - white silhouette.png',
       framesMax: 4
     },
     death: {
-      imageSrc: './img/luffy/Death.png',
+      imageSrc: './img/gojo/Death.png',
       framesMax: 6
     }
   },
