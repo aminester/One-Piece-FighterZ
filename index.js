@@ -39,7 +39,7 @@ const player = new Fighter({
     x: 0,
     y: 0
   },
-  imageSrc: './img/gojo/Idle.png',
+  imageSrc: './img/gojo/gojo idle sprites.png',
   framesMax: 8,
   scale: 2.5,
   offset: {
@@ -49,11 +49,11 @@ const player = new Fighter({
   // add sprite for secondary attack
   sprites: {
     idle: {
-      imageSrc: './img/gojo/Idle.png',
+      imageSrc: './img/gojo/gojo idle sprites.png',
       framesMax: 8
     },
     run: {
-      imageSrc: './img/gojo/Run.png',
+      imageSrc: './img/gojo/Gojo run sprite.png',
       framesMax: 5
     },
     jump: {
@@ -65,15 +65,15 @@ const player = new Fighter({
       framesMax: 2
     },
     attack1: {
-      imageSrc: './img/gojo/Attack1.png',
+      imageSrc: './img/gojo/GojoA1.png',
       framesMax: 6
     },
     attack2: {
-      imageSrc: './img/gojo/Attack2.png',
+      imageSrc: './img/gojo/GojoA2.png',
       framesMax: 4
     },
     attack3: {
-      imageSrc: './img/gojo/Attack3.png',
+      imageSrc: './img/gojo/GojoA3.png',
       framesMax: 7.5
     },
     takeHit: {
